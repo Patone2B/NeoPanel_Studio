@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G19 Neo Dashboard V8</title>
+  <meta name="description" content="Recyclez un smartphone en écran de contrôle futuriste pour PC." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">G19</span><span>Neo Dashboard</span></div>
+    <nav>
+      <a href="#features">Fonctions</a>
+      <a href="#security">Sécurité</a>
+      <a href="#install">Installation</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Version V8 • local • futuriste</p>
+        <h1>Transforme ton iPhone en cockpit de contrôle pour PC.</h1>
+        <p class="lead">G19 Neo Dashboard affiche les stats système, contrôle le son, lance tes applications, gère la météo et fonctionne sur ton réseau local, sans cloud obligatoire.</p>
+        <div class="actions">
+          <a class="btn primary" href="#install">Installer</a>
+          <a class="btn ghost" href="#features">Voir les fonctions</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/dashboard-preview.svg" alt="Aperçu futuriste du tableau de bord" />
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <h2>Un tableau de bord pensé pour le bureau, le jeu et le montage</h2>
+      <div class="grid cards">
+        <article><img src="assets/gpu-card.svg" alt="Icône GPU" /><h3>Monitoring PC</h3><p>CPU, RAM, GPU, VRAM, disque, température et réseau dans une interface lisible.</p></article>
+        <article><img src="assets/media-card.svg" alt="Icône média" /><h3>Contrôle média</h3><p>Lecture, pause, précédent, suivant, volume et mute directement depuis le téléphone.</p></article>
+        <article><img src="assets/phone-card.svg" alt="Icône téléphone" /><h3>iPhone paysage</h3><p>Interface adaptée au mode paysage, avec de gros boutons et un mode PWA sans barre Safari.</p></article>
+        <article><img src="assets/weather-card.svg" alt="Icône météo" /><h3>Météo intégrée</h3><p>Ville personnalisée, clé API OpenWeather, température, humidité, ressenti et vent.</p></article>
+      </div>
+    </section>
+
+    <section id="security" class="section split">
+      <div>
+        <p class="eyebrow">Sécurité locale</p>
+        <h2>Un PIN simple, un token propre, aucun compte à créer.</h2>
+        <p>Le téléphone se connecte au PC avec un PIN défini localement. Après validation, un token de session est mémorisé. Le QR code sert à ouvrir la bonne adresse réseau du PC.</p>
+      </div>
+      <div class="terminal">
+        <p><span>✓</span> PIN local</p>
+        <p><span>✓</span> Session téléphone</p>
+        <p><span>✓</span> Réparation token</p>
+        <p><span>✓</span> Réseau local</p>
+      </div>
+    </section>
+
+    <section id="install" class="section install">
+      <h2>Installation rapide</h2>
+      <div class="steps">
+        <div><b>1</b><p>Télécharge le ZIP et décompresse le dossier.</p></div>
+        <div><b>2</b><p>Lance <code>npm install</code> puis <code>npm start</code>.</p></div>
+        <div><b>3</b><p>Scanne le QR code ou ouvre l’adresse locale sur l’iPhone.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>G19 Neo Dashboard V8 — logiciel local pour transformer un smartphone en écran de contrôle PC.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
