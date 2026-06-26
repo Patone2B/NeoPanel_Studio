@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeoPanel Studio — Dashboard local pour PC</title>
-  <meta name="description" content="NeoDeck transforme un smartphone en écran de contrôle local pour PC Windows : système, médias, applications, météo et pages personnalisées.">
+  <title>NeoPanel Studio — Dashboard local pour Windows</title>
+  <meta name="description" content="NeoPanel Studio transforme un smartphone, une tablette ou un écran secondaire en tableau de bord local pour PC Windows : monitoring, raccourcis, médias, météo, notes et pages personnalisées.">
+  <meta name="theme-color" content="#2f5f9f">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <button class="brand nav-button" type="button" data-page="accueil" aria-label="Accueil G19 Neo Dashboard">
-        <span class="brand-mark">Neopanel</span>
-        <span class="brand-text">Neo Dashboard</span>
+      <button class="brand nav-button" type="button" data-page="accueil" aria-label="Accueil NeoPanel Studio">
+        <span class="brand-mark">NP</span>
+        <span class="brand-text">NeoPanel Studio</span>
       </button>
 
       <nav class="nav-links" aria-label="Navigation principale">
         <button class="nav-button active" type="button" data-page="accueil">Accueil</button>
+        <button class="nav-button" type="button" data-page="fonctionnalites">Fonctionnalités</button>
+        <button class="nav-button" type="button" data-page="comparaison">Comparaison</button>
+        <button class="nav-button" type="button" data-page="configuration">Configuration</button>
         <button class="nav-button" type="button" data-page="prix">Prix</button>
         <button class="nav-button" type="button" data-page="licence">Licence</button>
-        <button class="nav-button" type="button" data-page="fonctionnalites">Fonctionnalités</button>
         <button class="nav-button" type="button" data-page="telechargement">Télécharger</button>
         <button class="nav-button" type="button" data-page="apropos">À propos</button>
-            <button class="nav-button" type="button" data-page="requirment">Spécification</button>
       </nav>
     </div>
   </header>
@@ -31,8 +33,8 @@
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>NeoDeck — logiciel local pour PC Windows.</p>
-      <p>Aucun compte obligatoire. Aucun cloud imposé.</p>
+      <p>© 2026 NeoPanel Studio — dashboard local pour Windows.</p>
+      <p>Open source GPL v3 • Aucun compte • Aucun cloud imposé</p>
     </div>
   </footer>
 
@@ -40,12 +42,10 @@
     <section class="page hero-page">
       <div class="container hero-grid">
         <div class="hero-content">
-          <p class="eyebrow">Tableau de bord local pour PC Windows</p>
-          <h1>Transforme ton iPhone ou ton smartphone en écran de contrôle pour ton PC.</h1>
+          <p class="eyebrow">Dashboard local pour PC Windows</p>
+          <h1>Transformez votre smartphone en panneau de contrôle pour votre PC.</h1>
           <p class="lead">
-            G19 Neo Dashboard permet d'utiliser un téléphone comme second écran de contrôle :
-            surveillance système, météo, raccourcis, lancement de logiciels, contrôle multimédia
-            et pages de boutons personnalisées.
+            NeoPanel Studio permet d'utiliser un smartphone, une tablette ou un écran secondaire comme tableau de bord local : monitoring système, contrôle multimédia, raccourcis, météo, notes et pages personnalisées.
           </p>
 
           <div class="hero-actions">
@@ -54,136 +54,34 @@
           </div>
 
           <div class="trust-list">
-            <span>Local</span>
-            <span>Gratuit</span>
+            <span>Windows 10/11</span>
+            <span>Interface mobile</span>
+            <span>Réseau local</span>
             <span>Sans compte</span>
-            <span>Windows + mobile ( Androïd, IOS apou tout autre système d'explotations </span>
+            <span>GPL v3</span>
           </div>
         </div>
 
-        <aside class="product-preview" aria-label="Aperçu visuel du logiciel">
-          <div class="preview-topbar">
-            <span></span><span></span><span></span>
-          </div>
+        <aside class="product-preview" aria-label="Aperçu visuel de NeoPanel Studio">
+          <div class="preview-topbar"><span></span><span></span><span></span></div>
           <div class="preview-screen">
-            <div class="preview-card big">
-              <small>Dashboard</small>
-              <strong>PC en direct</strong>
-            </div>
+            <div class="preview-card big"><small>NeoPanel</small><strong>PC en direct</strong></div>
             <div class="preview-card"><small>CPU</small><strong>42%</strong></div>
             <div class="preview-card"><small>RAM</small><strong>61%</strong></div>
             <div class="preview-card"><small>Météo</small><strong>24°C</strong></div>
-            <div class="preview-card"><small>GPU</small><strong>À venir</strong></div>
+            <div class="preview-card"><small>Réseau</small><strong>Local</strong></div>
           </div>
-          <div class="preview-buttons">
-            <span>DaVinci</span>
-            <span>OBS</span>
-            <span>Média</span>
-            <span>Apps</span>
-          </div>
+          <div class="preview-buttons"><span>DaVinci</span><span>OBS</span><span>Média</span><span>Notes</span></div>
         </aside>
       </div>
     </section>
-  </template>
 
-  <template id="page-prix">
-    <section class="page">
-      <div class="container page-grid">
-        <div>
-          <p class="eyebrow">Prix</p>
-          <h1>Gratuit, sans abonnement et sans compte obligatoire.</h1>
-          <p class="lead">
-            Le projet est pensé pour rester accessible. L'idée n'est pas de vendre un service cloud,
-            mais de proposer un outil local qui tourne sur ton ordinateur et que ton téléphone consulte
-            sur le même réseau.
-          </p>
-
-          <div class="text-block">
-            <h2>Pourquoi gratuit ?</h2>
-            <p>
-              Le logiciel répond à un besoin simple : recycler un smartphone en écran secondaire utile,
-              dans l'esprit des anciens écrans Logitech G19. Il ne nécessite pas de serveur payant,
-              pas de stockage distant et pas d'infrastructure lourde.
-            </p>
-            <p>
-              Cette logique permet de garder une installation claire : tu lances le programme sur le PC,
-              tu ouvres l'adresse locale sur l'iPhone, et tu utilises le tableau de bord.
-            </p>
-          </div>
-        </div>
-
-        <aside class="price-panel">
-          <span class="price">0 €</span>
-          <p>Utilisation personnelle gratuite.</p>
-          <ul>
-            <li>Pas d'abonnement mensuel.</li>
-            <li>Pas de compte utilisateur obligatoire.</li>
-            <li>Pas de cloud imposé.</li>
-            <li>Fonctionnement sur réseau local.</li>
-          </ul>
-          <button class="button primary nav-button" type="button" data-page="telechargement">Obtenir le logiciel</button>
-        </aside>
-      </div>
-    </section>
-  </template>
-
-  <template id="page-licence">
-    <section class="page">
-      <div class="container narrow">
-        <p class="eyebrow">Licence</p>
-        <h1>Une licence claire pour protéger le projet et les utilisateurs.</h1>
-        <p class="lead">
-         # Licence de NeoPanel Studio : GPL V3
-
-<strong>NeoPanel Studio</strong> est un projet open source publié afin de permettre à chacun de l'utiliser, de l'étudier, de le modifier et de le partager.
-<br>
-En contrepartie, quelques règles simples doivent être respectées :
-<br>
-<li>* Vous devez toujours conserver la mention de copyright indiquant que je suis l'auteur original du projet.</li>
-<li>* Si vous redistribuez NeoPanel Studio, avec ou sans modifications, vous devez conserver cette même licence.</li>
-<li>* Toute version modifiée distribuée doit rester open source sous la même licence et inclure le code source correspondant.</li>
-<li>* Vous ne pouvez pas transformer NeoPanel Studio en logiciel propriétaire ou supprimer les mentions d'auteur.</li>
-<li>* Si vous améliorez le projet, vos contributions pourront bénéficier à l'ensemble de la communauté.</li>
-<br>
-Cette licence protège la liberté du logiciel tout en garantissant que le travail de son auteur reste reconnu et que chacun bénéficie des améliorations apportées au fil du temps.
-<br>
-Merci de respecter ces principes et de contribuer à faire grandir NeoPanel Studio.
-
-        </p>
-
-        <div class="cards three">
-          <article class="info-card">
-            <h2>Usage personnel</h2>
-            <p>
-              Tu peux utiliser NeoDeck sur ton propre ordinateur pour piloter ton PC,
-              surveiller ton système et créer tes pages de boutons personnalisées.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <h2>Partage responsable</h2>
-            <p>
-              Si le logiciel est partagé publiquement, il faut conserver les mentions du projet,
-              éviter de faire croire à une version officielle modifiée et préciser les changements apportés.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <h2>Transparence</h2>
-            <p>
-              Le logiciel agit sur le PC : lancement d'applications, raccourcis, contrôle média.
-              Il est donc important d'expliquer clairement ce qu'il fait et ce qu'il ne fait pas.
-            </p>
-          </article>
-        </div>
-
-        <div class="text-block">
-          <h2>Conseil</h2>
-          <p>
-       pour publier votre propre version du logiciel à partir de NeoPanel_Studio, vous devez ajouter survotre siute web ou alors dans votre logiciel le ficher " auteur.md" surt Goithub.
-
-          </p>
-        </div>
+    <section class="section-soft">
+      <div class="container stats-grid">
+        <article><strong>0 €</strong><span>gratuit</span></article>
+        <article><strong>0 cloud</strong><span>données locales</span></article>
+        <article><strong>10+</strong><span>boutons par page</span></article>
+        <article><strong>GPL v3</strong><span>open source protégé</span></article>
       </div>
     </section>
   </template>
@@ -192,226 +90,107 @@ Merci de respecter ces principes et de contribuer à faire grandir NeoPanel Stud
     <section class="page">
       <div class="container">
         <p class="eyebrow">Fonctionnalités</p>
-        <h1>Une page, une fonction : chaque module a un rôle précis.</h1>
-        <p class="lead">
-          L'objectif est d'éviter une interface confuse. Chaque page doit servir à une action claire :
-          surveiller, contrôler, lancer, configurer ou diagnostiquer.
-        </p>
+        <h1>Un panneau de contrôle pensé pour rester clair, rapide et local.</h1>
+        <p class="lead">Chaque module a un rôle précis : surveiller, contrôler, lancer, configurer ou diagnostiquer.</p>
 
         <div class="feature-grid">
-          <article class="feature-card">
-            <span class="icon">▣</span>
-            <h2>Dashboard système</h2>
-            <p>
-              Affiche les informations essentielles du PC : CPU, RAM, VRAM, disque, température,
-              réseau et état général. Le GPU reste indiqué comme fonctionnalité à améliorer si Windows
-              ne renvoie pas de donnée fiable.
-            </p>
-          </article>
+          <article class="feature-card"><span class="icon">▣</span><h2>Dashboard système</h2><p>Affiche les informations essentielles du PC : CPU, RAM, disque, réseau, état général et indicateurs utiles. La partie GPU peut évoluer selon les données disponibles sous Windows.</p></article>
+          <article class="feature-card"><span class="icon">▶</span><h2>Contrôle multimédia</h2><p>Contrôlez lecture, pause, volume, piste suivante, piste précédente et mute depuis le téléphone, même lorsque le PC est en plein écran.</p></article>
+          <article class="feature-card"><span class="icon">⌘</span><h2>Pages personnalisées</h2><p>Créez des pages dédiées à vos logiciels avec des boutons configurables pour lancer une application, envoyer un raccourci clavier ou déclencher une action.</p></article>
+          <article class="feature-card"><span class="icon">☁</span><h2>Météo locale</h2><p>Affichez la météo de votre ville avec une clé OpenWeather. La météo reste séparée des fonctions principales pour garder une interface lisible.</p></article>
+          <article class="feature-card"><span class="icon">✎</span><h2>Notes synchronisées</h2><p>Prenez des notes depuis l'interface mobile et gardez sous la main des pense-bêtes pour le montage vidéo, le streaming ou le travail quotidien.</p></article>
+          <article class="feature-card"><span class="icon">◎</span><h2>Réseau local</h2><p>Le téléphone rejoint l'adresse locale du PC. Pas besoin de créer un compte ni de faire transiter le dashboard par un serveur externe.</p></article>
+          <article class="feature-card"><span class="icon">⌕</span><h2>Diagnostic</h2><p>Consultez la version, l'adresse IP locale, l'état du serveur, la session active et les informations utiles avant de signaler un bug.</p></article>
+          <article class="feature-card"><span class="icon">◫</span><h2>QR code de connexion</h2><p>Scannez le QR code affiché par le logiciel pour ouvrir rapidement l'interface sur votre smartphone ou votre tablette.</p></article>
+          <article class="feature-card"><span class="icon">◆</span><h2>Profils logiciels</h2><p>Préparez des panneaux adaptés à DaVinci Resolve, OBS, un navigateur, un jeu ou vos outils de travail.</p></article>
+        </div>
+      </div>
+    </section>
 
-          <article class="feature-card">
-            <span class="icon">▶</span>
-            <h2>Contrôle multimédia</h2>
-            <p>
-              Permet de contrôler la lecture, le volume, le mute, le morceau suivant et le morceau précédent
-              depuis le téléphone. C'est utile quand le PC est loin, en plein écran ou utilisé en montage. 
-            </p>
-          </article>
-
-          <article class="feature-card">
-            <span class="icon">⌘</span>
-            <h2>Pages personnalisées</h2>
-            <p>
-              Crée des pages dédiées à un logiciel avec un chemin d'accès et dix boutons configurables.
-              Chaque bouton peut lancer une action ou envoyer un raccourci clavier défini par l'utilisateur. NeoDeck vous permet de créer vos propres pages de raccourcis logiciels, avec jusqu’à 10 boutons personnalisables.
-            </p>
-          </article>
-
-          <article class="feature-card">
-            <span class="icon">☁</span>
-            <h2>Météo</h2>
-            <p>
-              Affiche la météo locale avec une ville et une clé API configurables. La météo reste séparée
-              du reste du logiciel pour ne pas gêner les fonctions principales . Pour cela, munissez-vous d’une clé API gratuite OpenWeather et consultez la météo de votre ville en temps réel.
-            </p>
-          </article>
-
-          <article class="feature-card">
-            <span class="icon">⌕</span>
-            <h2>Diagnostic</h2>
-            <p>
-              Donne des informations utiles en cas de problème : version, serveur, IP locale,
-              session, état réseau et fonctions disponibles. C'est la page à consulter avant de chercher un bug.
-            </p>
-          </article>
-
-          <article class="feature-card">
-            <span class="icon">◎</span>
-            <h2>Réseau local</h2>
-            <p>
-              Le téléphone ne se connecte pas à Internet pour accéder au dashboard : il rejoint l'adresse
-              locale du PC. Le QR code renvoie donc vers l'adresse du PC qui lance le logiciel.
-            </p>
-          </article>
-                 <article class="feature-card">
-            <span class="icon">◎</span>
-            <h2>Note </h2>
-            <p>
-          Enfin, NeoDeck intègre un éditeur de notes synchronisé, idéal pour prendre des notes sur votre portable directement dans l’application. Pratique pour le montage vidéo ou pour garder sous la main des pense-bêtes !
-            </p>
-          </article>
+    <section class="section-soft">
+      <div class="container roadmap">
+        <div>
+          <p class="eyebrow">Roadmap</p>
+          <h1>Ce qui peut arriver ensuite.</h1>
+        </div>
+        <div class="timeline">
+          <article><span>1</span><h2>Thèmes visuels</h2><p>Modes clair/sombre et thèmes prêts à l'emploi.</p></article>
+          <article><span>2</span><h2>Profils partagés</h2><p>Import/export de pages de raccourcis pour les logiciels populaires.</p></article>
+          <article><span>3</span><h2>Monitoring GPU renforcé</h2><p>Meilleure prise en charge des cartes NVIDIA, AMD et Intel selon les possibilités Windows.</p></article>
         </div>
       </div>
     </section>
   </template>
 
-  <template id="requirment">
-  <section id="page">
-    <div classe="container page-grid>
-      <div>
-<p> <h1>Pour faire fonctionner ce logiciel, il faut respecter les configurations minimales et recommandées suivantes : </h1>
-      <h3> <strong>Configuration minimale</strong></h3>
-<strong>Système d'exploitation</strong>
-      <br>
-      <li>Windows 10 (64 bits) </li>
-      <br>
-<li>Windows 11 (64 bits)</li>
-      <br>
-<strong>Processeur</strong>
-<br>
-      <li>2 cœurs à 2 GHz minimum</li>
-      <br>
-      <li>Intel Core i3 (6ᵉ génération ou plus récente)</li>
-      <br>
-      <li>AMD Ryzen 3 1200 ou équivalent</li>
-      <br>
-      <strong>Mémoire vive (RAM)</strong>
-      <br>
-      <li>4 Go (minimum)</li>
-      <li>8 Go (recommandé)<li>
-<br>
-<strong>Carte graphique</strong>
-<br>
-<li>Compatible DirectX 11</li>
-<li>GPU intégré Intel HD/UHD ou AMD Vega (suffisant)</li>
-      
-<strong>Stockage</strong>
-      <br>
-<li>300 Mo d'espace libre</li>
-<li>SSD recommandé</li>
-      <br>
-<strong>Écran</strong>
-<br>
-<li>Résolution minimale : 1280 × 720</li>
-<hr>
-<hr>
-      
-<strong><h1>Configuration recommandée<h1></strong>
-<strong>Système d'exploitation</strong>
-<br>
-<li>Windows 11 (64 bits)
-      <li>Windows 11 (64 bits)</li>
-<strong>Processeur</strong>
-
-<li>Intel Core i5 (10ᵉ génération ou supérieure)</li>
-<li>AMD Ryzen 5 3600 ou supérieur</li>
-<strong>Mémoire vive (RAM)</strong>
-<br>
-<li>8 Go (minimum)</li>
-<li>16 Go (recommandé)</li>
-<strong>Carte graphique</strong>
-<br>
-<li>Compatible DirectX 12</li>
-<li>Toute carte graphique récente (NVIDIA, AMD ou Intel)</li>
-Stockage
-<br>
-<li>SSD NVMe</li>
-
-      </p>
-      <p><u><strong>Remarque :</strong> Une connexion internet est nécessaire, car le logiciel crée un serveur sur votre réseau local.</u></p>
-
-
-
-
-
-
-
-
-
-
-
-
-      
+  <template id="page-comparaison">
+    <section class="page">
+      <div class="container narrow">
+        <p class="eyebrow">Comparaison</p>
+        <h1>Un esprit proche d'un Stream Deck, mais pensé pour le local et la récupération d'écran.</h1>
+        <p class="lead">NeoPanel Studio ne cherche pas à remplacer tous les matériels spécialisés. Son objectif est simple : transformer un appareil déjà disponible en tableau de bord pratique.</p>
+        <div class="comparison-table" role="table" aria-label="Comparaison des usages">
+          <div role="row"><strong>Usage</strong><strong>NeoPanel Studio</strong><strong>Matériel dédié</strong></div>
+          <div role="row"><span>Utiliser un ancien smartphone</span><span>Oui</span><span>Non</span></div>
+          <div role="row"><span>Fonctionnement local</span><span>Oui</span><span>Variable</span></div>
+          <div role="row"><span>Raccourcis personnalisés</span><span>Oui</span><span>Oui</span></div>
+          <div role="row"><span>Open source</span><span>Oui, GPL v3</span><span>Souvent non</span></div>
+          <div role="row"><span>Coût matériel</span><span>Aucun si vous avez déjà l'appareil</span><span>Achat nécessaire</span></div>
+        </div>
       </div>
+    </section>
+  </template>
 
-    
-  <template id="page-telechargement">
+  <template id="page-configuration">
     <section class="page">
       <div class="container page-grid">
         <div>
-          <p class="eyebrow">Téléchargement</p>
-          <h1>Télécharger et NeoPanel_Studio.</h1>
-          <p class="lead">
-            Le logiciel est fourni sous forme de.exe/
-          </p>
-
-          <ol class="steps">
-            <li><strong>Télécharger le logiciel.</li>
-            <li><strong>double clique sur le fichier .exe. RTu auraus unre notifications bleu avec écrit : editeur inconnue. .</li>
-            <li><strong>appuyer sur dévlopper, puis sur executer squand meme. </li>
-            <li><strong>Lancer le logiciel.</li>
-            <li><strong>Scanner le QR code</strong> ou entrer l'adresse locale sur l'iPhone.</li>
-          </ol>
+          <p class="eyebrow">Configuration</p>
+          <h1>Une configuration légère pour Windows 10 et Windows 11.</h1>
+          <p class="lead">NeoPanel Studio est conçu pour rester simple : le PC héberge l'interface, le téléphone l'affiche depuis le même réseau local.</p>
+          <div class="cards two">
+            <article class="info-card"><h2>Configuration minimale</h2><ul><li>Windows 10 ou 11 64 bits</li><li>Processeur 2 cœurs à 2 GHz</li><li>4 Go de RAM</li><li>300 Mo d'espace libre</li><li>Réseau Wi‑Fi ou Ethernet local</li><li>Navigateur moderne sur mobile</li></ul></article>
+            <article class="info-card"><h2>Configuration recommandée</h2><ul><li>Windows 11 64 bits</li><li>Intel Core i5 ou AMD Ryzen 5 récent</li><li>8 à 16 Go de RAM</li><li>SSD recommandé</li><li>Smartphone ou tablette sur le même Wi‑Fi</li><li>Résolution PC 1280 × 720 minimum</li></ul></article>
+          </div>
         </div>
+        <aside class="download-panel"><h2>À retenir</h2><p>Une connexion Internet n'est pas nécessaire pour accéder au dashboard local. Elle peut seulement servir aux fonctions externes comme la météo ou au téléchargement des mises à jour.</p><button class="button primary nav-button" type="button" data-page="telechargement">Télécharger</button></aside>
+      </div>
+    </section>
+  </template>
 
-        <aside class="download-panel">
-          <h2>Liens</h2>
-          <p>Remplace ces liens par les adresses réelles au moment de la publication.</p>
-          <a class="button primary" href="#" aria-label="Télécharger G19 Neo Dashboard">Télécharger le ZIP</a>
-          <a class="button secondary" href="#" aria-label="Voir le dépôt GitHub">Voir le dépôt GitHub</a>
-          <a class="button secondary" href="#" aria-label="Voir la page Itch.io">Page Itch.io</a>
-        </aside>
+  <template id="page-prix">
+    <section class="page">
+      <div class="container page-grid">
+        <div><p class="eyebrow">Prix</p><h1>Gratuit, sans abonnement et sans compte obligatoire.</h1><p class="lead">Le projet est pensé pour rester accessible. Il ne vend pas un service cloud : il propose un outil local qui tourne sur votre ordinateur.</p><div class="text-block"><h2>Pourquoi gratuit ?</h2><p>NeoPanel Studio répond à un besoin simple : recycler un smartphone ou une tablette en écran secondaire utile, dans l'esprit des anciens écrans de contrôle Logitech G19.</p></div></div>
+        <aside class="price-panel"><span class="price">0 €</span><p>Utilisation personnelle gratuite.</p><ul><li>Pas d'abonnement mensuel.</li><li>Pas de compte utilisateur obligatoire.</li><li>Pas de cloud imposé.</li><li>Fonctionnement sur réseau local.</li></ul><button class="button primary nav-button" type="button" data-page="telechargement">Obtenir le logiciel</button></aside>
+      </div>
+    </section>
+  </template>
+
+  <template id="page-licence">
+    <section class="page">
+      <div class="container narrow">
+        <p class="eyebrow">Licence</p>
+        <h1>NeoPanel Studio est publié sous licence GPL v3.</h1>
+        <p class="lead">Cette licence permet d'utiliser, d'étudier, de modifier et de redistribuer le logiciel, tout en protégeant le projet contre une appropriation propriétaire.</p>
+        <div class="licence-panel"><h2>Règles principales</h2><ul class="check-list"><li>Le copyright de l'auteur original doit être conservé.</li><li>Une version redistribuée doit conserver la même licence GPL v3.</li><li>Une version modifiée distribuée doit rester open source.</li><li>Le code source correspondant doit rester accessible lors d'une redistribution.</li><li>Il est interdit de supprimer les mentions d'auteur ou de faire croire qu'une version modifiée est officielle.</li></ul></div>
+        <div class="cards three"><article class="info-card"><h2>Utiliser</h2><p>Vous pouvez utiliser NeoPanel Studio librement sur votre propre ordinateur.</p></article><article class="info-card"><h2>Modifier</h2><p>Vous pouvez adapter le logiciel à vos besoins, créer des profils et améliorer les modules.</p></article><article class="info-card"><h2>Redistribuer</h2><p>Vous pouvez partager le logiciel, à condition de respecter la GPL v3 et de conserver les crédits.</p></article></div>
+        <div class="text-block"><h2>Crédits</h2><p>Si vous publiez une version dérivée, ajoutez une mention claire de NeoPanel Studio, conservez le fichier de licence et indiquez les modifications apportées.</p></div>
+      </div>
+    </section>
+  </template>
+
+  <template id="page-telechargement">
+    <section class="page">
+      <div class="container page-grid">
+        <div><p class="eyebrow">Téléchargement</p><h1>Télécharger NeoPanel Studio.</h1><p class="lead">Le logiciel peut être distribué sous forme d'installateur Windows ou d'archive ZIP. Remplacez les liens ci-dessous par vos liens réels au moment de la publication.</p><ol class="steps"><li><strong>Téléchargez</strong> l'archive ZIP ou l'installateur.</li><li><strong>Lancez</strong> le fichier sur le PC Windows.</li><li>Si Windows affiche un avertissement d'éditeur inconnu, cliquez sur <strong>Informations complémentaires</strong>, puis sur <strong>Exécuter quand même</strong>.</li><li><strong>Scannez le QR code</strong> ou ouvrez l'adresse locale indiquée par le logiciel.</li><li>Gardez le téléphone et le PC sur le même réseau local.</li></ol></div>
+        <aside class="download-panel"><h2>Liens</h2><p>À remplacer avant publication.</p><a class="button primary" href="#">Télécharger le ZIP</a><a class="button secondary" href="#">Voir le dépôt GitHub</a><a class="button secondary" href="#">Page Itch.io</a><p class="small-note">Version conseillée : ajoutez ici le numéro de version, la date et éventuellement le SHA256.</p></aside>
       </div>
     </section>
   </template>
 
   <template id="page-apropos">
     <section class="page">
-      <div class="container narrow">
-        <p class="eyebrow">À propos</p>
-        <h1>Un projet inspiré des anciens écrans de contrôle, adapté aux usages actuels.</h1>
-        <p class="lead">
-          NeoPanel_Studio reprend l'idée d'un petit écran secondaire utile : afficher l'état du PC,
-          déclencher des actions rapides, contrôler la musique et centraliser des boutons importants.
-        </p>
-
-        <div class="text-block">
-          <h2>À quoi ça sert concrètement ?</h2>
-          <p>
-            Le logiciel est pratique pour le montage vidéo, le streaming, le jeu, la bureautique ou simplement
-            pour garder un œil sur le PC sans quitter une application en plein écran. Le téléphone devient une
-            télécommande locale et personnalisable.
-          </p>
-        </div>
-
-        <div class="text-block">
-          <h2>Pourquoi une interface web ?</h2>
-          <p>
-            Une interface web locale permet d'utiliser presque n'importe quel smartphone sans installer
-            d'application mobile dédiée. Le PC héberge la page, le téléphone l'affiche. Cela rend le projet
-            plus simple à partager, à modifier et à faire évoluer.
-          </p>
-        </div>
-
-        <div class="text-block">
-          <h2>Contribuer</h2>
-          <p>
-            Les contributions peuvent porter sur les raccourcis, les thèmes, la compatibilité GPU,
-            l'interface mobile, la documentation ou la création de profils pour les logiciels.
-            Une contribution utile doit être testée, expliquée et ne pas casser les fonctions existantes.
-          </p>
-        </div>
-      </div>
+      <div class="container narrow"><p class="eyebrow">À propos</p><h1>Un projet inspiré des anciens écrans de contrôle, adapté aux usages actuels.</h1><p class="lead">NeoPanel Studio reprend l'idée d'un petit écran secondaire utile : afficher l'état du PC, déclencher des actions rapides, contrôler la musique et centraliser des boutons importants.</p><div class="text-block"><h2>À quoi ça sert concrètement ?</h2><p>Le logiciel est pratique pour le montage vidéo, le streaming, le jeu, la bureautique ou simplement pour garder un œil sur le PC sans quitter une application en plein écran.</p></div><div class="text-block"><h2>Pourquoi une interface web ?</h2><p>Une interface web locale permet d'utiliser presque n'importe quel smartphone sans installer d'application mobile dédiée. Le PC héberge la page, le téléphone l'affiche.</p></div><div class="text-block"><h2>Contribuer</h2><p>Les contributions peuvent porter sur les raccourcis, les thèmes, la compatibilité GPU, l'interface mobile, la documentation ou la création de profils pour les logiciels.</p></div></div>
     </section>
   </template>
 
