@@ -23,7 +23,7 @@
         <button class="nav-button" type="button" data-page="configuration">Configuration</button>
         <button class="nav-button" type="button" data-page="prix">Prix</button>
         <button class="nav-button" type="button" data-page="licence">Licence</button>
-            <button class="nav-button" type="button" data-page="sécurité">sécurité</button>
+        <button class="nav-button" type="button" data-page="securite">Sécurité</button>
         <button class="nav-button" type="button" data-page="telechargement">Télécharger</button>
         <button class="nav-button" type="button" data-page="apropos">À propos</button>
       </nav>
@@ -54,19 +54,20 @@
             <button class="button secondary nav-button" type="button" data-page="fonctionnalites">Voir les fonctions</button>
           </div>
 
-          <div class="trust-list">
-            <span>Windows 10/11</span>
-            <span>Interface mobile</span>
-            <span>Réseau local</span>
-            <span>Sans compte</span>
-            <span>GPL v3</span>
-            <br>
-            <br>
-           <li> Toutes les données restent hébergées sur l'ordinateur de l'utilisateur.</li>
-           <li> Aucun compte n'est nécessaire.</li>
-            <li>Aucune donnée n'est transmise à un serveur distant.</li>
-          <li>  L'application fonctionne entièrement en local.</li>
-          </div>
+          <ul class="trust-list" aria-label="Points clés">
+            <li>Windows 10/11</li>
+            <li>Interface mobile</li>
+            <li>Réseau local</li>
+            <li>Sans compte</li>
+            <li>GPL v3</li>
+          </ul>
+
+          <ul class="check-list hero-checks">
+            <li>Les données restent hébergées sur l'ordinateur de l'utilisateur.</li>
+            <li>Aucun compte n'est nécessaire.</li>
+            <li>Aucune donnée n'est transmise à un serveur distant pour utiliser le dashboard local.</li>
+            <li>L'application fonctionne principalement en réseau local.</li>
+          </ul>
         </div>
 
         <aside class="product-preview" aria-label="Aperçu visuel de NeoPanel Studio">
@@ -114,72 +115,6 @@
       </div>
     </section>
 
-    <section class="section-soft">
-      <div class="section-soft">
-<div>
-<p><strong>Sécurité</strong>
-<br>
-La sécurité a été un axe majeur du développement de NeoPanel Studio.
-<br>
-Plusieurs niveaux de protection ont été intégrés afin de limiter les risques d'accès non autorisés tout en conservant une utilisation simple.
-<br>
-Les protections incluent notamment :
-<br>
-authentification obligatoire avant toute utilisation ;
-code de session généré automatiquement à chaque lancement du logiciel ;
-QR Code ne contenant que l'adresse locale du PC, sans information sensible ;
-accès limité au réseau local de l'utilisateur ;
-refus automatique des connexions provenant de l'extérieur du réseau ;
-protection des interfaces de communication et des échanges entre le PC et le téléphone ;
-journalisation des événements de sécurité ;
-possibilité d'autoriser ou de bloquer individuellement les appareils ;
-déconnexion immédiate des appareils si nécessaire ;
-contrôle des appareils autorisés depuis l'application PC.
-<br>
-Pour des raisons de sécurité, certains mécanismes internes ne sont volontairement pas détaillés publiquement.
-<br>
-Confidentialité
-<br>
-NeoPanel Studio respecte la vie privée.
-<br>
-<li>aucune création de compte ;</li>
-<li>aucune collecte de données personnelles ;</li>
-<li>aucune télémétrie ;</li>
-<li>aucun serveur cloud ;</li>
-<li>toutes les informations restent sur le PC de l'utilisateur.</li></p>
-<br>
-<hr>
-  <br>
-  Vérification antivirus
-
-La version 1.2.2 a été analysée par VirusTotal.
-<br>
-Résultat de l'analyse :
-<br>
-détection négative par la quasi-totalité des moteurs antivirus ;
-aucune détection par Microsoft Defender, Bitdefender, Kaspersky, Avast, Malwarebytes, ESET, Sophos, Fortinet, CrowdStrike et la plupart des autres moteurs reconnus ;
-une seule alerte heuristique (« machine learning ») provenant d'un moteur, ce qui est courant pour une application Electron récemment publiée et non encore signée numériquement.
-<br>
-<u>Aucun malware connu n'a été détecté.</u>
-  <hr>
-  Pourquoi une alerte heuristique peut apparaître ?
-<br>
-NeoPanel Studio est une application récente.
-<br>
-Comme beaucoup de logiciels Electron, elle :
-<br>
-n'a pas encore d'historique de réputation ;
-n'est pas encore signée numériquement ;
-ouvre un serveur local afin de communiquer avec le smartphone.
-<br>
-Ces caractéristiques peuvent conduire certains moteurs utilisant l'intelligence artificielle à attribuer un score de prudence, sans pour autant identifier un comportement malveillant.
-<br>
-Une signature numérique et une diffusion plus large devraient réduire ce type de faux positif.
-  <br>
-</div>
-</section>
-  </template>
-  
     <section class="section-soft">
       <div class="container roadmap">
         <div>
@@ -252,11 +187,58 @@ Une signature numérique et une diffusion plus large devraient réduire ce type 
     </section>
   </template>
 
+  <template id="page-securite">
+    <section class="page">
+      <div class="container narrow">
+        <p class="eyebrow">Sécurité et confidentialité</p>
+        <h1>Une application locale, pensée pour limiter l'exposition des données.</h1>
+        <p class="lead">NeoPanel Studio fonctionne sur le réseau local de l'utilisateur. Le téléphone ou la tablette se connecte au PC sans compte utilisateur et sans service cloud obligatoire.</p>
+
+        <div class="cards two security-grid">
+          <article class="info-card">
+            <h2>Protections intégrées</h2>
+            <ul class="check-list">
+              <li>Authentification obligatoire avant l'accès au panneau.</li>
+              <li>Code de session généré automatiquement au lancement du logiciel.</li>
+              <li>QR code limité à l'adresse locale du PC.</li>
+              <li>Accès prévu pour le réseau local de l'utilisateur.</li>
+              <li>Contrôle des appareils autorisés depuis l'application PC.</li>
+              <li>Possibilité de bloquer ou de déconnecter un appareil.</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <h2>Confidentialité</h2>
+            <ul class="check-list">
+              <li>Aucune création de compte.</li>
+              <li>Aucune télémétrie obligatoire.</li>
+              <li>Aucun serveur cloud imposé pour le dashboard.</li>
+              <li>Les informations du dashboard restent sur le PC de l'utilisateur.</li>
+              <li>La météo peut nécessiter une connexion externe si elle est activée.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="text-block warning-block">
+          <h2>Note de transparence</h2>
+          <p>Pour éviter de donner des informations exploitables, certains mécanismes internes ne sont pas détaillés publiquement. L'objectif est d'expliquer les garanties principales sans exposer inutilement le fonctionnement technique.</p>
+        </div>
+
+        <div class="text-block">
+          <h2>Vérification antivirus</h2>
+          <p>La version 1.2.2 a été analysée avec VirusTotal. D'après les éléments fournis, la quasi-totalité des moteurs n'a pas signalé de menace connue. Une alerte heuristique isolée peut arriver sur une application Electron récente, surtout lorsqu'elle n'est pas encore signée numériquement et qu'elle ouvre un serveur local.</p>
+          <p><strong>Aucun malware connu n'a été détecté dans les éléments indiqués.</strong></p>
+          <p class="small-note">Avant publication, ajoutez ici le lien VirusTotal réel, la date du scan et le SHA-256 exact du fichier distribué.</p>
+        </div>
+      </div>
+    </section>
+  </template>
+
   <template id="page-telechargement">
     <section class="page">
       <div class="container page-grid">
         <div><p class="eyebrow">Téléchargement</p><h1>Télécharger NeoPanel Studio.</h1><p class="lead">Le logiciel peut être distribué sous forme d'installateur Windows ou d'archive ZIP. Remplacez les liens ci-dessous par vos liens réels au moment de la publication.</p><ol class="steps"><li><strong>Téléchargez</strong> l'archive ZIP ou l'installateur.</li><li><strong>Lancez</strong> le fichier sur le PC Windows.</li><li>Si Windows affiche un avertissement d'éditeur inconnu, cliquez sur <strong>Informations complémentaires</strong>, puis sur <strong>Exécuter quand même</strong>.</li><li><strong>Scannez le QR code</strong> ou ouvrez l'adresse locale indiquée par le logiciel.</li><li>Gardez le téléphone et le PC sur le même réseau local.</li></ol></div>
-        <aside class="download-panel"><h2>Liens</h2><p>À remplacer avant publication.</p><a class="button primary" href="#">Télécharger le ZIP</a><a class="button secondary" href="#">Voir le dépôt GitHub</a><a class="button secondary" href="#">Page Itch.io</a><p class="small-note">Version conseillée : ajoutez ici le numéro de version, la date et éventuellement le SHA256.</p></aside>
+        <aside class="download-panel"><h2>Liens</h2><p>À remplacer avant publication.</p><a class="button primary" href="#">Télécharger le ZIP</a><a class="button secondary" href="#">Voir le dépôt GitHub</a><a class="button secondary" href="#">Page Itch.io</a><p class="small-note">Version conseillée : ajoutez ici le numéro de version, la date et le SHA-256.</p></aside>
       </div>
     </section>
   </template>
