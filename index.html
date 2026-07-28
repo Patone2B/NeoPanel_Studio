@@ -6,26 +6,33 @@
   <title>NeoPanel Studio — Dashboard local pour Windows</title>
   <meta name="description" content="NeoPanel Studio transforme un smartphone, une tablette ou un écran secondaire en tableau de bord local pour PC Windows : monitoring, raccourcis, médias, météo, notes et pages personnalisées.">
   <meta name="theme-color" content="#2f5f9f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <button class="brand nav-button" type="button" data-page="accueil" aria-label="Accueil NeoPanel Studio">
-        <span class="brand-mark">NP</span>
-        <span class="brand-text">NeoPanel Studio</span>
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-copy"><strong>NeoPanel</strong><small>Studio</small></span>
       </button>
 
-      <nav class="nav-links" aria-label="Navigation principale">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-navigation" class="nav-links" aria-label="Navigation principale">
         <button class="nav-button active" type="button" data-page="accueil">Accueil</button>
-        <button class="nav-button" type="button" data-page="fonctionnalites">Fonctionnalités</button>
+        <button class="nav-button" type="button" data-page="fonctionnalites">Fonctions</button>
         <button class="nav-button" type="button" data-page="comparaison">Comparaison</button>
         <button class="nav-button" type="button" data-page="configuration">Configuration</button>
         <button class="nav-button" type="button" data-page="prix">Prix</button>
-        <button class="nav-button" type="button" data-page="licence">Licence</button>
         <button class="nav-button" type="button" data-page="securite">Sécurité</button>
-        <button class="nav-button" type="button" data-page="telechargement">Télécharger</button>
-        <button class="nav-button" type="button" data-page="apropos">À propos</button>
+        <button class="nav-button nav-more" type="button" data-page="licence">Licence</button>
+        <button class="nav-button nav-more" type="button" data-page="apropos">À propos</button>
+        <button class="nav-button nav-download" type="button" data-page="telechargement">Télécharger</button>
       </nav>
     </div>
   </header>
@@ -40,62 +47,73 @@
   </footer>
 
   <template id="page-accueil">
-    <section class="page home-page">
-      <div class="container home-layout">
-        <div class="home-copy">
-          <p class="kicker">NeoPanel Studio pour Windows</p>
-          <h1>Le panneau de contrôle de votre PC, sur un écran que vous avez déjà.</h1>
-          <p class="lead">Installez NeoPanel Studio sur votre PC, puis utilisez un smartphone ou une tablette pour piloter vos médias, lancer vos logiciels et garder un œil sur la machine.</p>
-
+    <section class="hero page-section">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <div class="status-pill"><span></span> Application locale pour Windows</div>
+          <h1>Votre PC, sous contrôle.<br><em>Depuis votre téléphone.</em></h1>
+          <p class="lead">NeoPanel Studio transforme un smartphone, une tablette ou un écran secondaire en véritable panneau de commande pour Windows.</p>
           <div class="hero-actions">
-            <button class="button primary nav-button" type="button" data-page="telechargement">Télécharger gratuitement</button>
-            <button class="text-link nav-button" type="button" data-page="fonctionnalites">Découvrir les fonctions →</button>
+            <button class="button primary nav-button" type="button" data-page="telechargement">Télécharger gratuitement <span>→</span></button>
+            <button class="button ghost nav-button" type="button" data-page="fonctionnalites">Voir les fonctionnalités</button>
           </div>
-
-          <div class="home-facts" aria-label="Informations principales">
-            <span>Windows 10 et 11</span>
-            <span>Réseau local</span>
-            <span>Sans compte</span>
-            <span>GPL v3</span>
+          <div class="hero-trust" aria-label="Caractéristiques principales">
+            <span><b>✓</b> Sans compte</span>
+            <span><b>✓</b> Réseau local</span>
+            <span><b>✓</b> Open source</span>
           </div>
         </div>
 
-        <aside class="product-preview" aria-label="Aperçu de NeoPanel Studio">
-          <div class="preview-header">
-            <span>NeoPanel</span>
-            <small>PC connecté</small>
+        <div class="device-stage reveal" aria-label="Aperçu animé de NeoPanel Studio">
+          <div class="device-halo" aria-hidden="true"></div>
+          <div class="dashboard-window">
+            <div class="window-bar"><div><i></i><i></i><i></i></div><span>NeoPanel Studio</span><small>● Connecté</small></div>
+            <div class="dashboard-body">
+              <aside class="dashboard-sidebar"><strong>NP</strong><span class="active"></span><span></span><span></span><span></span></aside>
+              <div class="dashboard-main">
+                <div class="dashboard-title"><div><small>Bonjour</small><strong>Votre PC est prêt</strong></div><span>08:42</span></div>
+                <div class="metric-grid">
+                  <article><small>CPU</small><strong data-count="42">42%</strong><div class="meter"><span style="--value:42%"></span></div></article>
+                  <article><small>Mémoire</small><strong data-count="61">61%</strong><div class="meter"><span style="--value:61%"></span></div></article>
+                  <article class="metric-accent"><small>Réseau</small><strong>Local</strong><div class="pulse-line"></div></article>
+                </div>
+                <div class="command-grid"><button>DaVinci</button><button>OBS</button><button>Lecture</button><button>Volume</button><button>Notes</button><button>＋</button></div>
+              </div>
+            </div>
           </div>
-          <div class="preview-metrics">
-            <article><small>CPU</small><strong>42%</strong></article>
-            <article><small>RAM</small><strong>61%</strong></article>
-            <article><small>Réseau</small><strong>Local</strong></article>
-          </div>
-          <div class="preview-actions">
-            <span>DaVinci</span><span>OBS</span><span>Lecture</span><span>Notes</span>
-          </div>
-        </aside>
+          <div class="floating-card floating-card-one"><span>▶</span><div><small>Média</small><strong>Lecture</strong></div></div>
+          <div class="floating-card floating-card-two"><span>✓</span><div><small>Connexion</small><strong>Sécurisée</strong></div></div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="proof-bar">
+      <div class="container proof-grid">
+        <article class="reveal"><strong>0 €</strong><span>Gratuit, sans abonnement</span></article>
+        <article class="reveal"><strong>100 % local</strong><span>Vos données restent sur votre PC</span></article>
+        <article class="reveal"><strong>Windows 10/11</strong><span>Installation simple et rapide</span></article>
+        <article class="reveal"><strong>GPL v3</strong><span>Projet open source</span></article>
       </div>
     </section>
 
-    <section class="home-strip">
-      <div class="container home-strip-grid">
-        <article class="price-highlight"><span class="price">0 €</span><p>Gratuit, sans abonnement.</p></article>
-        <article><strong>Local par défaut</strong><p>Le tableau de bord est hébergé sur votre propre ordinateur.</p></article>
-        <article><strong>Réutilisez un appareil</strong><p>Un ancien téléphone ou une tablette suffit.</p></article>
+    <section class="page-section home-features">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="kicker">Pensé pour être utile</p><h2>Les commandes importantes,<br>toujours à portée de main.</h2></div><p>Pas besoin d'acheter un écran spécialisé. Réutilisez un appareil que vous possédez déjà.</p></div>
+        <div class="home-feature-grid">
+          <article class="home-feature large reveal"><span class="feature-icon">⌁</span><div><p class="mini-label">Monitoring</p><h3>Gardez un œil sur votre PC</h3><p>CPU, mémoire, réseau et informations système s'affichent en temps réel dans une interface claire.</p></div><div class="mini-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="home-feature reveal"><span class="feature-icon">⌘</span><div><p class="mini-label">Raccourcis</p><h3>Lancez vos actions en un geste</h3><p>Applications, commandes multimédias et raccourcis clavier personnalisés.</p></div></article>
+          <article class="home-feature reveal"><span class="feature-icon">◎</span><div><p class="mini-label">Local</p><h3>Sans cloud imposé</h3><p>Le téléphone communique directement avec votre ordinateur sur le réseau local.</p></div></article>
+        </div>
       </div>
     </section>
 
-    <section class="page home-summary">
-      <div class="container summary-layout">
-        <div>
-          <p class="kicker">Au quotidien</p>
-          <h2 class="section-title">Tout ce qui sert vraiment, sans tableau marketing interminable.</h2>
-        </div>
-        <div class="summary-list">
-          <article><span>01</span><div><h3>Surveiller</h3><p>CPU, mémoire, réseau et informations utiles du PC.</p></div></article>
-          <article><span>02</span><div><h3>Contrôler</h3><p>Lecture, volume, raccourcis et lancement d'applications.</p></div></article>
-          <article><span>03</span><div><h3>Personnaliser</h3><p>Pages adaptées à DaVinci Resolve, OBS, au jeu ou au travail.</p></div></article>
-        </div>
+    <section class="cta-section">
+      <div class="container cta-card reveal">
+        <div><p class="kicker">Disponible gratuitement</p><h2>Donnez une nouvelle utilité à votre ancien écran.</h2><p>Aucun abonnement. Aucun compte obligatoire. Installez, connectez et utilisez.</p></div>
+        <div class="cta-price"><span>0 €</span><button class="button light nav-button" type="button" data-page="telechargement">Télécharger NeoPanel</button></div>
       </div>
     </section>
   </template>
