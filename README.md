@@ -248,7 +248,7 @@ Vous pouvez étudier, modifier et redistribuer le code dans le respect des condi
 
 <div align="center">
 
-Développé par **Anton**.
+Développé par **Patone**.
 
 **NeoPanel Studio 1.2.2**
 
