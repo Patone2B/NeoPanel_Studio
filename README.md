@@ -126,52 +126,21 @@ Les VPN, Hyper-V, VMware, Docker ou d’autres cartes virtuelles peuvent ajouter
 
 ### Prérequis
 
-- Windows 10 ou Windows 11 ;
-- Node.js récent, compatible avec Electron 42 ;
-- npm.
+### Configuration minimale
+-Windows 10 ou 11 64 bits
+-Processeur 2 cœurs à 2 GHz
+-4 Go de RAM
+-300 Mo d'espace libre
+-Réseau Wi‑Fi ou Ethernet local
+-Navigateur moderne sur mobile
 
-### Installation
-
-```powershell
-git clone https://github.com/Patone2B/NeoPanel_Studio.git
-cd NeoPanel_Studio
-npm install
-npm start
-```
-
-### Création de l’installateur
-
-```powershell
-npm run make
-```
-
-Les fichiers sont générés dans :
-
-```text
-out\make
-```
-
-Le dépôt GitHub doit contenir le code source, mais pas les dossiers `node_modules`, `out`, `make`, `dist` ou `release`.
-
-## Vérifications avant publication
-
-```powershell
-node --check server.js
-node --check main.js
-node --check public\app.js
-npm audit
-npm run make
-```
-
-Il est conseillé de tester ensuite :
-
-- l’installation sur un second PC Windows ;
-- la désinstallation et la réinstallation ;
-- la connexion depuis Android et iPhone ;
-- la détection des logiciels ;
-- la météo après redémarrage ;
-- le réseau avec et sans VPN.
-
+### Configuration recommandée
+-Windows 11 64 bits
+-Intel Core i5 ou AMD Ryzen 5 récent
+-8 à 16 Go de RAM
+-SSD recommandé
+-Smartphone ou tablette sur le même Wi‑Fi
+-Résolution PC 1280 × 720 minimum
 ## Structure du projet
 
 ```text
