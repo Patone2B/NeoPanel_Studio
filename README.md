@@ -128,11 +128,17 @@ Les VPN, Hyper-V, VMware, Docker ou d’autres cartes virtuelles peuvent ajouter
 
 ### Configuration minimale
 -Windows 10 ou 11 64 bits
+
 -Processeur 2 cœurs à 2 GHz
+
 -4 Go de RAM
+
 -300 Mo d'espace libre
+
 -Réseau Wi‑Fi ou Ethernet local
+
 -Navigateur moderne sur mobile
+
 
 ### Configuration recommandée
 -Windows 11 64 bits
