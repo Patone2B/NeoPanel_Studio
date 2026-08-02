@@ -983,6 +983,349 @@ h3 {
   align-content:start
 }
 
+/* Page téléchargement */
+.download-page {
+  position:relative;
+  overflow:hidden
+}
+
+.download-page::before {
+  content:"";
+  position:absolute;
+  top:40px;
+  left:50%;
+  width:720px;
+  height:420px;
+  pointer-events:none;
+  transform:translateX(-50%);
+  background:radial-gradient(circle,rgba(110,168,255,.12),transparent 68%);
+  filter:blur(14px)
+}
+
+.download-container {
+  position:relative;
+  z-index:1
+}
+
+.download-heading {
+  max-width:780px;
+  margin:0 auto 46px;
+  text-align:center
+}
+
+.download-heading h1 {
+  margin-bottom:18px
+}
+
+.download-heading .lead {
+  max-width:650px;
+  margin:0 auto
+}
+
+.download-grid {
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(320px,.65fr);
+  gap:20px;
+  max-width:1040px;
+  margin:0 auto
+}
+
+.download-card,
+.download-links-card,
+.itch-download-panel {
+  border:1px solid var(--border);
+  border-radius:24px;
+  background:rgba(17,26,42,.9);
+  box-shadow:0 24px 70px rgba(0,0,0,.24)
+}
+
+.download-main-card {
+  position:relative;
+  overflow:hidden;
+  padding:30px
+}
+
+.download-main-card::after {
+  content:"";
+  position:absolute;
+  right:-100px;
+  bottom:-130px;
+  width:310px;
+  height:310px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(124,108,255,.18),transparent 68%);
+  pointer-events:none
+}
+
+.download-card-topline {
+  position:relative;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px
+}
+
+.download-app-icon {
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  gap:4px;
+  width:54px;
+  height:54px;
+  padding:13px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:15px;
+  background:linear-gradient(145deg,var(--primary),var(--primary-2));
+  box-shadow:0 12px 30px rgba(110,168,255,.22)
+}
+
+.download-app-icon i {
+  width:7px;
+  border-radius:4px;
+  background:#fff
+}
+
+.download-app-icon i:nth-child(1) {height:13px;opacity:.7}
+.download-app-icon i:nth-child(2) {height:25px}
+.download-app-icon i:nth-child(3) {height:18px;opacity:.85}
+
+.download-version {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 12px;
+  border:1px solid rgba(85,223,180,.2);
+  border-radius:999px;
+  color:#c9f7e8;
+  background:rgba(85,223,180,.07);
+  font-size:.76rem;
+  font-weight:800
+}
+
+.download-version i {
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 0 5px rgba(85,223,180,.1)
+}
+
+.download-card-copy {
+  position:relative;
+  z-index:1;
+  margin:38px 0 28px
+}
+
+.download-card-copy h2 {
+  margin:4px 0 12px;
+  font-size:clamp(2.2rem,5vw,3.7rem);
+  letter-spacing:-.055em
+}
+
+.download-card-copy p:last-child {
+  max-width:570px;
+  color:var(--muted)
+}
+
+.download-details {
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  margin:0 0 24px;
+  padding:17px 0;
+  list-style:none;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border)
+}
+
+.download-details li {
+  display:grid;
+  gap:4px;
+  padding:0 16px;
+  border-right:1px solid var(--border)
+}
+
+.download-details li:first-child {padding-left:0}
+.download-details li:last-child {padding-right:0;border-right:0}
+.download-details span {color:var(--muted);font-size:.72rem}
+.download-details strong {font-size:.87rem}
+
+.download-primary-button {
+  position:relative;
+  z-index:1;
+  width:100%;
+  min-height:68px;
+  justify-content:flex-start;
+  color:#06101e
+}
+
+.download-primary-button:hover {
+  box-shadow:0 18px 45px rgba(110,168,255,.25)
+}
+
+.download-primary-button>span:last-child {
+  display:grid;
+  gap:2px;
+  text-align:left
+}
+
+.download-primary-button small {
+  opacity:.65;
+  font-size:.68rem;
+  font-weight:700
+}
+
+.download-arrow {
+  display:grid;
+  place-items:center;
+  width:36px;
+  height:36px;
+  border-radius:10px;
+  background:rgba(6,16,30,.09);
+  font-size:1.25rem
+}
+
+.download-help {
+  position:relative;
+  z-index:1;
+  margin:12px 0 0;
+  color:var(--muted);
+  font-size:.72rem;
+  text-align:center
+}
+
+.download-links-card {
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+  padding:30px
+}
+
+.download-links-card h2 {
+  margin:4px 0 8px;
+  font-size:1.7rem
+}
+
+.download-links-card>div>p:last-child {
+  color:var(--muted);
+  font-size:.88rem
+}
+
+.download-link-list {
+  display:grid;
+  gap:10px
+}
+
+.download-link-list>a {
+  display:grid;
+  grid-template-columns:42px 1fr auto;
+  align-items:center;
+  gap:12px;
+  padding:13px;
+  border:1px solid var(--border);
+  border-radius:14px;
+  color:var(--text);
+  background:rgba(255,255,255,.025);
+  text-decoration:none;
+  transition:transform .2s,border-color .2s,background .2s
+}
+
+.download-link-list>a:hover {
+  transform:translateX(3px);
+  border-color:rgba(110,168,255,.45);
+  background:rgba(110,168,255,.06)
+}
+
+.download-link-list>a>span:nth-child(2) {
+  display:grid;
+  gap:3px
+}
+
+.download-link-list small {
+  color:var(--muted);
+  font-size:.68rem
+}
+
+.download-link-list b {
+  color:var(--primary);
+  font-size:1.1rem
+}
+
+.download-link-icon {
+  display:grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  border-radius:11px;
+  color:#fff;
+  background:#202b3d;
+  font-size:.75rem;
+  font-weight:800
+}
+
+.download-link-icon.itch-icon {
+  background:#fa5c5c;
+  font-size:1.1rem
+}
+
+.download-requirement {
+  display:flex;
+  gap:11px;
+  margin-top:auto;
+  padding:15px;
+  border-radius:14px;
+  background:rgba(85,223,180,.06)
+}
+
+.download-requirement>span {
+  display:grid;
+  place-items:center;
+  flex:0 0 26px;
+  width:26px;
+  height:26px;
+  border-radius:50%;
+  color:#07140f;
+  background:var(--accent);
+  font-weight:900
+}
+
+.download-requirement p {
+  color:var(--muted);
+  font-size:.74rem
+}
+
+.download-requirement strong {color:var(--text)}
+
+.itch-download-panel {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+  max-width:1040px;
+  margin:20px auto 0;
+  padding:24px 30px
+}
+
+.itch-download-panel h2 {
+  margin-top:5px;
+  font-size:1.35rem
+}
+
+.itch-embed-wrap {
+  width:min(100%,560px);
+  overflow:hidden;
+  border-radius:12px
+}
+
+.itch-embed-wrap iframe {
+  display:block;
+  width:100%;
+  max-width:560px;
+  border:0
+}
+
 .small-note,
 .info-card p,
 .feature-card p,
@@ -1305,6 +1648,15 @@ h3 {
   grid-template-columns:1fr
 }
 
+.download-grid {
+  grid-template-columns:1fr
+}
+
+.itch-download-panel {
+  align-items:flex-start;
+  flex-direction:column
+}
+
 
 }
 
@@ -1334,6 +1686,37 @@ h1 {
 
 .button {
   width:100%
+}
+
+.download-heading {
+  margin-bottom:30px;
+  text-align:left
+}
+
+.download-main-card,
+.download-links-card {
+  padding:21px
+}
+
+.download-details {
+  grid-template-columns:1fr;
+  gap:12px
+}
+
+.download-details li,
+.download-details li:first-child,
+.download-details li:last-child {
+  grid-template-columns:80px 1fr;
+  padding:0;
+  border-right:0
+}
+
+.itch-download-panel {
+  padding:21px
+}
+
+.itch-embed-wrap iframe {
+  height:190px
 }
 
 .device-stage {
