@@ -1,7 +1,7 @@
 # NeoPanel Studio
 
 <p align="center">
-  <img src="NeoPanel_Studio/Code_soure/public/icons/icon-512.png" alt="NeoPanel Studio" width="180"/>
+  <img src="NeoPanel_Studio/Code_soure/public/icons/icon-192.png" alt="NeoPanel Studio" width="180"/>
 </p>
 
 <p align="center">
